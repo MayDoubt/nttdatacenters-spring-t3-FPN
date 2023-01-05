@@ -1,0 +1,225 @@
+00:49:47.565 [restartedMain] DEBUG o.h.e.i.AbstractSaveEventListener - [saveWithGeneratedId] - Generated identifier: 1, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+00:49:47.577 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [processCommit] - Initiating transaction commit
+00:49:47.578 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doCommit] - Committing JPA transaction on EntityManager [SessionImpl(1767450372<open>)]
+00:49:47.578 [restartedMain] DEBUG o.h.e.t.internal.TransactionImpl - [commit] - committing
+00:49:47.578 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [prepareEntityFlushes] - Processing flush-time cascades
+00:49:47.579 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [prepareCollectionFlushes] - Dirty checking collections
+00:49:47.582 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [logFlushResults] - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+00:49:47.582 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [logFlushResults] - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+00:49:47.583 [restartedMain] DEBUG o.h.internal.util.EntityPrinter - [toString] - Listing entities:
+00:49:47.583 [restartedMain] DEBUG o.h.internal.util.EntityPrinter - [toString] - com.nttdata.spring_t3.repositories.Client{clientId=1, birthdate=1990-12-07, surname=Fiestas, name=Paco, dni=12312312A}
+00:49:47.589 [restartedMain] DEBUG org.hibernate.SQL - [logStatement] - insert into t_client (c_birthdate, c_dni, c_name, c_surname, c_client_id) values (?, ?, ?, ?, ?)
+00:49:47.596 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doCleanupAfterCompletion] - Closing JPA EntityManager [SessionImpl(1767450372<open>)] after transaction
+00:49:47.597 [restartedMain] DEBUG o.h.e.j.internal.JdbcCoordinatorImpl - [close] - HHH000420: Closing un-released batch
+00:49:47.597 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [getTransaction] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+00:49:47.597 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doBegin] - Opened new EntityManager [SessionImpl(22760925<open>)] for JPA transaction
+00:49:47.597 [restartedMain] DEBUG o.h.e.t.internal.TransactionImpl - [<init>] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+00:49:47.597 [restartedMain] DEBUG o.h.e.t.internal.TransactionImpl - [begin] - begin
+00:49:47.598 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doBegin] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@420329ec]
+00:49:47.598 [restartedMain] DEBUG org.hibernate.loader.Loader - [loadEntity] - Loading entity: [com.nttdata.spring_t3.repositories.Client#2]
+00:49:47.598 [restartedMain] DEBUG org.hibernate.SQL - [logStatement] - select client0_.c_client_id as c_client1_0_0_, client0_.c_birthdate as c_birthd2_0_0_, client0_.c_dni as c_dni3_0_0_, client0_.c_name as c_name4_0_0_, client0_.c_surname as c_surnam5_0_0_ from t_client client0_ where client0_.c_client_id=?
+00:49:47.599 [restartedMain] DEBUG org.hibernate.loader.Loader - [loadEntity] - Done entity load
+00:49:47.599 [restartedMain] DEBUG org.hibernate.SQL - [logStatement] - select next_val as id_val from hibernate_sequence for update
+00:49:47.600 [restartedMain] DEBUG org.hibernate.SQL - [logStatement] - update hibernate_sequence set next_val= ? where next_val=?
+00:49:47.600 [restartedMain] DEBUG o.h.e.i.AbstractSaveEventListener - [saveWithGeneratedId] - Generated identifier: 2, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+00:49:47.601 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [processCommit] - Initiating transaction commit
+00:49:47.601 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doCommit] - Committing JPA transaction on EntityManager [SessionImpl(22760925<open>)]
+00:49:47.601 [restartedMain] DEBUG o.h.e.t.internal.TransactionImpl - [commit] - committing
+00:49:47.601 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [prepareEntityFlushes] - Processing flush-time cascades
+00:49:47.601 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [prepareCollectionFlushes] - Dirty checking collections
+00:49:47.601 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [logFlushResults] - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+00:49:47.601 [restartedMain] DEBUG o.h.e.i.AbstractFlushingEventListener - [logFlushResults] - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+00:49:47.601 [restartedMain] DEBUG o.h.internal.util.EntityPrinter - [toString] - Listing entities:
+00:49:47.602 [restartedMain] DEBUG o.h.internal.util.EntityPrinter - [toString] - com.nttdata.spring_t3.repositories.Client{clientId=2, birthdate=1997-01-15, surname=Flores, name=Antonio, dni=32132132Z}
+00:49:47.602 [restartedMain] DEBUG org.hibernate.SQL - [logStatement] - insert into t_client (c_birthdate, c_dni, c_name, c_surname, c_client_id) values (?, ?, ?, ?, ?)
+00:49:47.604 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doCleanupAfterCompletion] - Closing JPA EntityManager [SessionImpl(22760925<open>)] after transaction
+00:49:47.604 [restartedMain] DEBUG o.h.e.j.internal.JdbcCoordinatorImpl - [close] - HHH000420: Closing un-released batch
+00:49:47.605 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [getTransaction] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.count]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+00:49:47.605 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doBegin] - Opened new EntityManager [SessionImpl(419063869<open>)] for JPA transaction
+00:49:47.607 [restartedMain] DEBUG o.s.jdbc.datasource.DataSourceUtils - [prepareConnectionForTransaction] - Setting JDBC Connection [HikariProxyConnection@2125426188 wrapping com.mysql.cj.jdbc.ConnectionImpl@1136fab4] read-only
+00:49:47.607 [restartedMain] DEBUG o.h.e.t.internal.TransactionImpl - [<init>] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+00:49:47.607 [restartedMain] DEBUG o.h.e.t.internal.TransactionImpl - [begin] - begin
+00:49:47.608 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doBegin] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@779be522]
+00:49:47.626 [restartedMain] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - [initiateService] - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@4d16a146
+00:49:47.643 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [parse] - parse() - HQL: select count(*) from com.nttdata.spring_t3.repositories.Client x
+00:49:47.646 [restartedMain] DEBUG o.h.hql.internal.ast.ErrorTracker - [throwQueryException] - throwQueryException() : no errors
+00:49:47.652 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [showHqlAst] - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  |  \-[IDENT] Node: 'nttdata'
+       |     |  |  |  \-[IDENT] Node: 'spring_t3'
+       |     |  |  \-[IDENT] Node: 'repositories'
+       |     |  \-[IDENT] Node: 'Client'
+       |     \-[ALIAS] Node: 'x'
+       \-[SELECT] Node: 'select'
+          \-[COUNT] Node: 'count'
+             \-[ROW_STAR] Node: '*'
+
+00:49:47.671 [restartedMain] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - [beforeStatement] - select << begin [level=1, statement=select]
+00:49:47.680 [restartedMain] DEBUG o.h.h.internal.ast.tree.FromElement - [doInitialize] - FromClause{level=1} : com.nttdata.spring_t3.repositories.Client (x) -> client0_
+00:49:47.681 [restartedMain] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - [beforeStatementCompletion] - select : finishing up [level=1, statement=select]
+00:49:47.682 [restartedMain] DEBUG o.h.hql.internal.ast.HqlSqlWalker - [processQuery] - processQuery() :  ( SELECT ( {select clause} ( count * ) ) ( FromClause{level=1} t_client client0_ ) )
+00:49:47.685 [restartedMain] DEBUG o.h.h.i.ast.util.JoinProcessor - [findQueryReferencedTables] - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    |  +-CountNode
+    |  |  \-SqlNode
+    |  \-SqlNode
+    \-FromClause
+       \-FromElement
+
+00:49:47.686 [restartedMain] DEBUG o.h.h.i.ast.util.JoinProcessor - [addJoinNodes] - Using FROM fragment [t_client client0_]
+00:49:47.687 [restartedMain] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - [afterStatementCompletion] - select >> end [level=1, statement=select]
+00:49:47.687 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [analyze] - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (t_client)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[COUNT] CountNode: 'count'
+    |  |  \-[ROW_STAR] SqlNode: '*'
+    |  \-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[x], fromElementByTableAlias=[client0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 't_client client0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=x,role=null,tableName=t_client,tableAlias=client0_,origin=null,columns={,className=com.nttdata.spring_t3.repositories.Client}}
+
+00:49:47.687 [restartedMain] DEBUG o.h.hql.internal.ast.ErrorTracker - [throwQueryException] - throwQueryException() : no errors
+00:49:47.691 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [generate] - HQL: select count(*) from com.nttdata.spring_t3.repositories.Client x
+00:49:47.691 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [generate] - SQL: select count(*) as col_0_0_ from t_client client0_
+00:49:47.691 [restartedMain] DEBUG o.h.hql.internal.ast.ErrorTracker - [throwQueryException] - throwQueryException() : no errors
+00:49:47.695 [restartedMain] DEBUG org.hibernate.SQL - [logStatement] - select count(*) as col_0_0_ from t_client client0_
+00:49:47.696 [restartedMain] DEBUG org.hibernate.loader.Loader - [debugf] - Result set row: 0
+00:49:47.696 [restartedMain] DEBUG org.hibernate.loader.Loader - [getRow] - Result row: 
+00:49:47.697 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [processCommit] - Initiating transaction commit
+00:49:47.698 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doCommit] - Committing JPA transaction on EntityManager [SessionImpl(419063869<open>)]
+00:49:47.698 [restartedMain] DEBUG o.h.e.t.internal.TransactionImpl - [commit] - committing
+00:49:47.698 [restartedMain] DEBUG o.s.jdbc.datasource.DataSourceUtils - [resetConnectionAfterTransaction] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@2125426188 wrapping com.mysql.cj.jdbc.ConnectionImpl@1136fab4]
+00:49:47.698 [restartedMain] DEBUG o.s.orm.jpa.JpaTransactionManager - [doCleanupAfterCompletion] - Closing JPA EntityManager [SessionImpl(419063869<open>)] after transaction
+00:49:47.700 [restartedMain] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - [invoke] - Creating new EntityManager for shared EntityManager invocation
+00:49:47.702 [restartedMain] DEBUG o.h.q.c.internal.CriteriaQueryImpl - [interpret] - Rendered criteria query -> select generatedAlias0 from Client as generatedAlias0 where ( generatedAlias0.name=:param0 ) and ( generatedAlias0.surname=:param1 )
+00:49:47.704 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [parse] - parse() - HQL: select generatedAlias0 from com.nttdata.spring_t3.repositories.Client as generatedAlias0 where ( generatedAlias0.name=:param0 ) and ( generatedAlias0.surname=:param1 )
+00:49:47.705 [restartedMain] DEBUG o.h.hql.internal.ast.ErrorTracker - [throwQueryException] - throwQueryException() : no errors
+00:49:47.705 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [showHqlAst] - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  |  \-[IDENT] Node: 'nttdata'
+    |  |     |  |  |  \-[IDENT] Node: 'spring_t3'
+    |  |     |  |  \-[IDENT] Node: 'repositories'
+    |  |     |  \-[IDENT] Node: 'Client'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[AND] Node: 'and'
+          +-[EQ] Node: '='
+          |  +-[DOT] Node: '.'
+          |  |  +-[IDENT] Node: 'generatedAlias0'
+          |  |  \-[IDENT] Node: 'name'
+          |  \-[COLON] Node: ':'
+          |     \-[IDENT] Node: 'param0'
+          \-[EQ] Node: '='
+             +-[DOT] Node: '.'
+             |  +-[IDENT] Node: 'generatedAlias0'
+             |  \-[IDENT] Node: 'surname'
+             \-[COLON] Node: ':'
+                \-[IDENT] Node: 'param1'
+
+00:49:47.706 [restartedMain] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - [beforeStatement] - select << begin [level=1, statement=select]
+00:49:47.706 [restartedMain] DEBUG o.h.h.internal.ast.tree.FromElement - [doInitialize] - FromClause{level=1} : com.nttdata.spring_t3.repositories.Client (generatedAlias0) -> client0_
+00:49:47.706 [restartedMain] DEBUG o.h.h.i.ast.tree.FromReferenceNode - [setResolved] - Resolved : generatedAlias0 -> client0_.c_client_id
+00:49:47.707 [restartedMain] DEBUG o.h.h.i.ast.tree.FromReferenceNode - [setResolved] - Resolved : generatedAlias0 -> client0_.c_client_id
+00:49:47.708 [restartedMain] DEBUG o.h.hql.internal.ast.tree.DotNode - [getDataType] - getDataType() : name -> org.hibernate.type.StringType@34bf136b
+00:49:47.709 [restartedMain] DEBUG o.h.h.i.ast.tree.FromReferenceNode - [setResolved] - Resolved : generatedAlias0.name -> client0_.c_name
+00:49:47.709 [restartedMain] DEBUG o.h.h.i.ast.tree.FromReferenceNode - [setResolved] - Resolved : generatedAlias0 -> client0_.c_client_id
+00:49:47.710 [restartedMain] DEBUG o.h.hql.internal.ast.tree.DotNode - [getDataType] - getDataType() : surname -> org.hibernate.type.StringType@34bf136b
+00:49:47.710 [restartedMain] DEBUG o.h.h.i.ast.tree.FromReferenceNode - [setResolved] - Resolved : generatedAlias0.surname -> client0_.c_surname
+00:49:47.710 [restartedMain] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - [beforeStatementCompletion] - select : finishing up [level=1, statement=select]
+00:49:47.710 [restartedMain] DEBUG o.h.hql.internal.ast.HqlSqlWalker - [processQuery] - processQuery() :  ( SELECT ( {select clause} client0_.c_client_id ) ( FromClause{level=1} t_client client0_ ) ( where ( and ( = ( client0_.c_name client0_.c_client_id name ) ? ) ( = ( client0_.c_surname client0_.c_client_id surname ) ? ) ) ) )
+00:49:47.712 [restartedMain] DEBUG o.h.h.i.ast.util.JoinProcessor - [findQueryReferencedTables] - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Client): [t_client]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(com.nttdata.spring_t3.repositories.Client)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-SqlNode
+          +-BinaryLogicOperatorNode
+          |  +-DotNode
+          |  | persister: SingleTableEntityPersister(com.nttdata.spring_t3.repositories.Client)
+          |  | path: generatedAlias0.name
+          |  |  +-IdentNode
+          |  |  | persister: SingleTableEntityPersister(com.nttdata.spring_t3.repositories.Client)
+          |  |  | originalText: generatedAlias0
+          |  |  \-IdentNode
+          |  |    persister: null
+          |  |    originalText: name
+          |  \-ParameterNode
+          \-BinaryLogicOperatorNode
+             +-DotNode
+             | persister: SingleTableEntityPersister(com.nttdata.spring_t3.repositories.Client)
+             | path: generatedAlias0.surname
+             |  +-IdentNode
+             |  | persister: SingleTableEntityPersister(com.nttdata.spring_t3.repositories.Client)
+             |  | originalText: generatedAlias0
+             |  \-IdentNode
+             |    persister: null
+             |    originalText: surname
+             \-ParameterNode
+
+00:49:47.712 [restartedMain] DEBUG o.h.h.i.ast.util.JoinProcessor - [addJoinNodes] - Using FROM fragment [t_client client0_]
+00:49:47.712 [restartedMain] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - [afterStatementCompletion] - select >> end [level=1, statement=select]
+00:49:47.712 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [analyze] - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (t_client)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'client0_.c_client_id as c_client1_0_' {alias=generatedAlias0, className=com.nttdata.spring_t3.repositories.Client, tableAlias=client0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'client0_.c_birthdate as c_birthd2_0_, client0_.c_dni as c_dni3_0_, client0_.c_name as c_name4_0_, client0_.c_surname as c_surnam5_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[client0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 't_client client0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=t_client,tableAlias=client0_,origin=null,columns={,className=com.nttdata.spring_t3.repositories.Client}}
+    \-[WHERE] SqlNode: 'where'
+       \-[AND] SqlNode: 'and'
+          +-[EQ] BinaryLogicOperatorNode: '='
+          |  +-[DOT] DotNode: 'client0_.c_name' {propertyName=name,dereferenceType=PRIMITIVE,getPropertyPath=name,path=generatedAlias0.name,tableAlias=client0_,className=com.nttdata.spring_t3.repositories.Client,classAlias=generatedAlias0}
+          |  |  +-[ALIAS_REF] IdentNode: 'client0_.c_client_id' {alias=generatedAlias0, className=com.nttdata.spring_t3.repositories.Client, tableAlias=client0_}
+          |  |  \-[IDENT] IdentNode: 'name' {originalText=name}
+          |  \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@34bf136b}
+          \-[EQ] BinaryLogicOperatorNode: '='
+             +-[DOT] DotNode: 'client0_.c_surname' {propertyName=surname,dereferenceType=PRIMITIVE,getPropertyPath=surname,path=generatedAlias0.surname,tableAlias=client0_,className=com.nttdata.spring_t3.repositories.Client,classAlias=generatedAlias0}
+             |  +-[ALIAS_REF] IdentNode: 'client0_.c_client_id' {alias=generatedAlias0, className=com.nttdata.spring_t3.repositories.Client, tableAlias=client0_}
+             |  \-[IDENT] IdentNode: 'surname' {originalText=surname}
+             \-[NAMED_PARAM] ParameterNode: '?' {name=param1, expectedType=org.hibernate.type.StringType@34bf136b}
+
+00:49:47.712 [restartedMain] DEBUG o.h.hql.internal.ast.ErrorTracker - [throwQueryException] - throwQueryException() : no errors
+00:49:47.712 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [generate] - HQL: select generatedAlias0 from com.nttdata.spring_t3.repositories.Client as generatedAlias0 where ( generatedAlias0.name=:param0 ) and ( generatedAlias0.surname=:param1 )
+00:49:47.712 [restartedMain] DEBUG o.h.h.i.ast.QueryTranslatorImpl - [generate] - SQL: select client0_.c_client_id as c_client1_0_, client0_.c_birthdate as c_birthd2_0_, client0_.c_dni as c_dni3_0_, client0_.c_name as c_name4_0_, client0_.c_surname as c_surnam5_0_ from t_client client0_ where client0_.c_name=? and client0_.c_surname=?
+00:49:47.713 [restartedMain] DEBUG o.h.hql.internal.ast.ErrorTracker - [throwQueryException] - throwQueryException() : no errors
+00:49:47.748 [restartedMain] DEBUG org.hibernate.SQL - [logStatement] - select client0_.c_client_id as c_client1_0_, client0_.c_birthdate as c_birthd2_0_, client0_.c_dni as c_dni3_0_, client0_.c_name as c_name4_0_, client0_.c_surname as c_surnam5_0_ from t_client client0_ where client0_.c_name=? and client0_.c_surname=?
+00:49:47.749 [restartedMain] DEBUG org.hibernate.loader.Loader - [debugf] - Result set row: 0
+00:49:47.749 [restartedMain] DEBUG org.hibernate.loader.Loader - [getRow] - Result row: EntityKey[com.nttdata.spring_t3.repositories.Client#1]
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Resolving attributes for [com.nttdata.spring_t3.repositories.Client#1]
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Processing attribute `birthdate` : value = 1990-12-07
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Attribute (`birthdate`)  - enhanced for lazy-loading? - false
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Processing attribute `dni` : value = 12312312A
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Attribute (`dni`)  - enhanced for lazy-loading? - false
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Processing attribute `name` : value = Paco
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Attribute (`name`)  - enhanced for lazy-loading? - false
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Processing attribute `surname` : value = Fiestas
+00:49:47.753 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityEntryLoadedState] - Attribute (`surname`)  - enhanced for lazy-loading? - false
+00:49:47.754 [restartedMain] DEBUG o.h.engine.internal.TwoPhaseLoad - [initializeEntityFromEntityEntryLoadedState] - Done materializing entity [com.nttdata.spring_t3.repositories.Client#1]
+00:49:47.764 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - [logTo] - Creating new Restarter for thread Thread[main,5,main]
+00:49:47.764 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - [logTo] - Immediately restarting application
+00:49:47.764 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - [logTo] - Starting application com.nttdata.spring_t3.Main with URLs [file:/D:/DATOS/CESUR/DEVELOP/WORKSPACES/DUAL/nttdatacenters-spring-t3-FPN/target/classes/]
+00:49:47.765 [restartedMain] DEBUG o.s.b.a.ApplicationAvailabilityBean - [onApplicationEvent] - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
